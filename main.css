@@ -29,6 +29,11 @@ body {
     margin-left: 15px;
 }
 
+#wrapper nav header a {
+    text-decoration: none;
+    color: white;
+}
+
 #wrapper nav ul {
     grid-column: 10/13;
     padding: 0;
@@ -81,7 +86,7 @@ main #right {
 main #right img {
     width: 300px;
     opacity: 0.6;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-right: -30px;
 }
 
@@ -141,6 +146,12 @@ section article#firstArt img {
     border: 1px solid white;
     padding: 5px;
     border-radius: 5px;
+}
+
+section article#firstArt img:hover {
+    position: relative;
+    top: -10px;
+
 }
 
 
@@ -240,7 +251,6 @@ section article#secondArt .btnDownload {
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
-    color: white;
     font-weight: bold;
     border-radius: 15px;
     background: #f12711;
@@ -250,6 +260,17 @@ section article#secondArt .btnDownload {
     background: linear-gradient(to right, #e06c0d, #f12711);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: pointer;
+}
+
+section article#secondArt .btnDownload:hover {
+    position: relative;
+    top: -5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+section article#secondArt .btnDownload a {
+    color: white;
+    text-decoration: none;
 }
 
 article#projects {
@@ -291,4 +312,79 @@ footer#services .services h3 {
 footer#services .services a {
     text-decoration: none;
     color: white;
+}
+
+.contact {
+    color: white;
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e06c0d, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e06c0d, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, minmax(0, auto));
+    grid-column: 1/13;
+    /* padding: 10px; */
+    height: 0;
+    overflow: hidden;
+    transition: height 2s ease-in-out 1s;
+}
+
+.open {
+    height: auto;
+}
+
+.contact #contleft {
+    grid-column: 2/6;
+    grid-row: 1/2;
+}
+
+.contact #contleft p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contact #contright {
+    grid-column: 6/13;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, minmax(0, auto));
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.contact #contright a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact #contright #git {
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+.contact #contright #twitter {
+    grid-column: 6/13;
+    grid-row: 1/2;
+}
+
+.contact #contright #goog {
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+
+.contact #contright #phone {
+    grid-column: 6/13;
+    grid-row: 2/3;
+}
+
+.contact #contright p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0.3em;
 }
