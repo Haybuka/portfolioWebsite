@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: aqua;
 }
 
 #wrapper nav {
@@ -42,7 +41,7 @@ body {
 
 }
 
-#wrapper nav li a {
+nav li a {
     color: white;
     display: inline-block;
     text-decoration: none;
@@ -58,7 +57,6 @@ main {
     background: linear-gradient(to right, #161617, #1f1f22, rgb(57, 58, 59));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
-    color: white;
     grid-row: 2/3;
     grid-column: 1/13;
     display: grid;
@@ -92,7 +90,6 @@ main #right img {
 button.btnKnow {
     padding: 10px 20px;
     border: none;
-    color: white;
     font-weight: bold;
     border-radius: 15px;
     background: #f12711;
@@ -103,6 +100,10 @@ button.btnKnow {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 15px auto;
     cursor: pointer;
+}
+
+.active {
+    color: #f12711;
 }
 
 button.btnKnow a {
@@ -270,34 +271,6 @@ article#projects small {
 article#projects h3 {
     display: inline-block;
 }
-
-/* 
-article#projects #plantShop {
-    grid-row: 2/3;
-    grid-column: 1/4;
-    background-color: #2c2d2d;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 3px;
-}
-
-article#projects #plantify {
-    grid-row: 2/3;
-    grid-column: 4/8;
-    background-color: #2c2d2d;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 3px;
-}
-
-article#projects #FourCard {
-    grid-row: 2/3;
-    grid-column: 8/12;
-    background-color: #2c2d2d;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 3px;
-} */
 
 footer#services {
     background-color: #2c2d2d;
