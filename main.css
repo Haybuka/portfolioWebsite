@@ -4,6 +4,7 @@
 
 body {
     color: white;
+    font-family: 'Mada';
 }
 
 #wrapper {
@@ -30,7 +31,7 @@ body {
 }
 
 #wrapper nav ul {
-    grid-column: 8/13;
+    grid-column: 10/13;
     padding: 0;
 }
 
@@ -38,7 +39,16 @@ body {
     list-style-type: none;
     display: inline-block;
     margin-right: 10px;
+
 }
+
+#wrapper nav li a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 main {
     background: #0F2027;
@@ -77,6 +87,8 @@ main #right img {
     margin-right: -30px;
 }
 
+
+
 button.btnKnow {
     padding: 10px 20px;
     border: none;
@@ -91,6 +103,11 @@ button.btnKnow {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 15px auto;
     cursor: pointer;
+}
+
+button.btnKnow a {
+    color: white;
+    text-decoration: none;
 }
 
 span {
@@ -113,14 +130,19 @@ section {
 
 section article#firstArt {
     grid-column: 2/3;
-    border: 1px solid rgb(39, 43, 43);
+    position: relative;
+
 }
 
 section article#firstArt img {
     width: 250px;
-    background-color: rgb(39, 43, 43);
     margin-top: 55px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
 }
+
+
 
 section article#secondArt {
     grid-column: 4/13;
