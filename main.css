@@ -146,12 +146,13 @@ section article#firstArt img {
     border: 1px solid white;
     padding: 5px;
     border-radius: 5px;
+    transition: 3s;
 }
 
 section article#firstArt img:hover {
     position: relative;
     top: -10px;
-
+    background-color: red;
 }
 
 
@@ -260,6 +261,7 @@ section article#secondArt .btnDownload {
     background: linear-gradient(to right, #e06c0d, #f12711);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: pointer;
+    transition: 3s;
 }
 
 section article#secondArt .btnDownload:hover {
@@ -327,14 +329,14 @@ footer#services .services a {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, minmax(0, auto));
     grid-column: 1/13;
-    /* padding: 10px; */
     height: 0;
     overflow: hidden;
-    transition: height 2s ease-in-out 1s;
+    transition: 5s;
 }
 
 .open {
     height: auto;
+    transition: all 10s;
 }
 
 .contact #contleft {
@@ -387,4 +389,37 @@ footer#services .services a {
     font-weight: bold;
     font-size: 1em;
     margin-bottom: 0.3em;
+}
+
+@keyframes drive {
+    0% {
+        transform: translate(0);
+        color: white;
+        font-size: 20px;
+    }
+
+    50% {
+        transform: translate(400px, -400px);
+        font-size: 15px;
+        color: red;
+        opacity: 0.3;
+    }
+
+
+    100% {
+        transform: translate(400px, -400px);
+        font-size: 15px;
+        color: red;
+        opacity: 0;
+    }
+}
+
+.car {
+    position: relative;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(.27, .65, .66, .48);
 }
