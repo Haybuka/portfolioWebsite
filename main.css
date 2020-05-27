@@ -4,7 +4,7 @@
 
 body {
 	color: white;
-	font-family: 'Mada';
+	font-family: 'Mada', sans-serif;
 }
 
 #wrapper {
@@ -13,6 +13,7 @@ body {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	overflow: hidden;
 }
 
 #wrapper nav {
