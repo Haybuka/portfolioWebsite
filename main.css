@@ -436,6 +436,9 @@ span {
 }
 
 @media screen and (max-width: 850px) {
+	body {
+		color: orange;
+	}
 	section article#secondArt .html {
 		grid-column: 1/3;
 		grid-row: 1/2;
@@ -487,6 +490,9 @@ span {
 }
 
 @media screen and (max-width: 720px) {
+	body {
+		color: darkmagenta;
+	}
 	main #left {
 		grid-column: 2/7;
 		/* margin-top: 60px; */
@@ -510,6 +516,9 @@ span {
 }
 
 @media screen and (max-width: 660px) {
+	body {
+		color: red;
+	}
 	#wrapper nav ul {
 		grid-column: 7/13;
 		margin-right: 5%;
@@ -529,7 +538,7 @@ span {
 
 @media screen and (max-width: 575px) {
 	body {
-		color: red;
+		color: pink;
 	}
 
 	#wrapper nav {
@@ -582,5 +591,11 @@ span {
 	#wrapper nav header h3 {
 		display: block;
 		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	body {
+		color: lime;
 	}
 }
