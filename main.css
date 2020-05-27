@@ -545,3 +545,62 @@ span {
     } */
 
 }
+
+@media screen and (max-width:374px) {
+    body {
+        color: red
+    }
+
+    #wrapper nav {
+        display: grid;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul {
+        padding: 0;
+        display: block;
+        margin: 0;
+        height: 0;
+        transform: translateX(500px);
+        /* grid-column: 1/13; */
+    }
+
+    #wrapper nav ul {
+        grid-column: 1/13;
+        margin-left: 5px;
+    }
+
+    .slideIn {
+        height: auto;
+        /* transform: translateX(-170px); */
+        transform: translateX(0);
+    }
+
+    #wrapper nav li {
+        display: block;
+        margin: 15px auto;
+        border-bottom: 1px solid #fff;
+    }
+
+    #wrapper nav .toggler {
+        grid-column: 10/13;
+        display: block;
+        grid-row: 1/2;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+
+    #wrapper nav .toggler span {
+        display: block;
+        cursor: pointer;
+        height: 5px;
+        width: 30px;
+    }
+
+    #wrapper nav header h3 {
+        display: block;
+        margin: 10px auto;
+    }
+
+}
