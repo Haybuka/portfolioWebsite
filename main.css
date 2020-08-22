@@ -388,7 +388,7 @@ footer#services .services a {
 }
 
 .contact #contright #twitter {
-	grid-column: 6/13;
+	grid-column: 7/13;
 	grid-row: 1/2;
 }
 
@@ -398,7 +398,7 @@ footer#services .services a {
 }
 
 .contact #contright #phone {
-	grid-column: 6/13;
+	grid-column: 7/13;
 	grid-row: 2/3;
 }
 
@@ -712,11 +712,12 @@ span {
 	}
 
 	.contact #contleft {
-		grid-column: 1/3;
+		grid-column: 2/6;
+		font-size: 15px;
 	}
 
 	.contact #contright {
-		grid-column: 3/13;
+		grid-column: 6/13;
 		margin-top: 5px;
 		font-size: 0.7em;
 	}
