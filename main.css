@@ -365,6 +365,8 @@ footer#services .services a {
 .contact #contleft p {
 	font-size: 2em;
 	font-weight: bold;
+	margin-top: 0.3em;
+	margin-left: 0.5em;
 }
 
 .contact #contright {
@@ -712,12 +714,12 @@ span {
 	}
 
 	.contact #contleft {
-		grid-column: 2/6;
+		grid-column: 1/5;
 		font-size: 15px;
 	}
 
 	.contact #contright {
-		grid-column: 6/13;
+		grid-column: 5/13;
 		margin-top: 5px;
 		font-size: 0.7em;
 	}
