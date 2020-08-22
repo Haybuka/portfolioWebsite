@@ -18,7 +18,7 @@ slider.addEventListener('click', (n) => {
     midSpan.classList.toggle('drop')
     firstSpan.classList.toggle('cross')
     thirdSpan.classList.toggle('revCross')
-    slider.classList.toggle('resize')
+
 
 })
 // sliderSpan.addEventListener('click', (n) => {
@@ -27,8 +27,11 @@ slider.addEventListener('click', (n) => {
 console.log('Hi there,your royal Geekiness.....Try Not to Break Anything!!!!!....Just Kidding')
 AOS.init();
 
-// burger.addEventListener('click', function () {
-//     this.classList.add('active')
-//     dropDown.classList.toggle('active')
 
-// })
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        const preloader = document.querySelector(".lds-heart");
+        preloader.className += "loaded";
+    }, 2000);
+
+});
