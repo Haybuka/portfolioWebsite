@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ndulue Paschal</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="fontAwesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
@@ -12,7 +14,7 @@
 
 <body>
     <div id="wrapper">
-        <nav>
+        <nav data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <header>
                 <h3><a href="https://paschal.haybuka.now.sh/">P.E.N</a></h3>
             </header>
@@ -27,11 +29,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <main>
-            <div id="left">
+        <main data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <div id="left" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                data-aos-anchor-placement="center-bottom">
                 <p>Hello, My Name is</p>
                 <h1>Ndulue Paschal</h1>
-                <p><span></span>A Student, Creative thinker & FrontEnd Developer </p>
+                <p id="titles"><span></span>A Student, Creative thinker & FrontEnd Developer </p>
                 <button class="btnKnow"><a href="#about">Know More</a></button>
             </div>
             <div id="right">
@@ -54,11 +57,11 @@
                     </p>
                     <p> I am passionate and dedicated about Code.
                     </p>
-                    <p class="hide">I am also open to learning new Frameworks,Working in a Team and utilizing necessary
+                    <p class="hide">I am open to learning new Frameworks,Working in a Team and utilizing necessary
                         skills to see
-                        a task to completion.</p>
+                        a task to completion .</p>
                 </aside>
-                <aside class="skills">
+                <aside class="skills" data-aos="fade-up">
                     <div class="html">
                         <h3>Html5</h3>
                         <div>
@@ -96,8 +99,9 @@
                         </div>
                     </div>
                     <div class="bootStrap">
-                        <h3>BootStrap</h3>
+                        <h3>BootStrap 3 & 4</h3>
                         <div>
+                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -129,11 +133,12 @@
                 </button>
             </article>
         </section>
-        <article id="projects">
+        <article id="projects" data-aos="flip-right" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <small>
                 <span></span>
                 <h3>Self Projects</h3>
-                <p>For my Projects,Do feel free to peruse the content of my Github Repository,link below.</p>
+                <p> For my Projects,Do feel free to peruse the content of my Github Repository,link below. Or Follow the
+                    Recent Project in the Navigation</p>
             </small>
 
         </article>
@@ -172,7 +177,9 @@
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/typed.min.js"></script>
 </body>
 
 </html>
