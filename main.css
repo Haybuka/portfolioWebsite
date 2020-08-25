@@ -425,7 +425,7 @@ footer#services .services a {
 	position: relative;
 	left: 0;
 	animation-name: drive;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-fill-mode: both;
 	animation-delay: 0.5s;
 	animation-timing-function: cubic-bezier(.27, .65, .66, .48);
@@ -447,18 +447,18 @@ span {
 	0% {
 		transform: translate(0);
 		color: white;
-		font-size: 20px;
+		font-size: 30px;
 	}
 
 	50% {
 		transform: translate(400px, -400px);
-		font-size: 15px;
+		font-size: 20px;
 		color: #f12711;
 		opacity: 0.7;
 	}
 
 	100% {
-		transform: translate(400px, -400px);
+		transform: translate(500px, -500px);
 		color: transparent;
 	}
 }
