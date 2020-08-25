@@ -515,7 +515,7 @@ span {
 
 	#wrapper nav ul {
 		grid-column: 8/13;
-		margin-right: 5%;
+		margin-right: 0;
 	}
 
 	section article#secondArt .btnDownload {
@@ -538,6 +538,11 @@ span {
 		/* margin-top: 60px; */
 	}
 
+	#wrapper nav ul {
+		grid-column: 7/13;
+		margin-right: 0;
+	}
+
 	main #right {
 		grid-column: 7/12;
 	}
@@ -555,6 +560,7 @@ span {
 	}
 }
 
+
 @media screen and (max-width: 660px) {
 	#wrapper nav ul {
 		grid-column: 7/13;
@@ -567,9 +573,7 @@ span {
 		position: relative;
 		left: -20px;
 	}
-}
 
-@media screen and (max-width: 575px) {
 	#wrapper nav {
 		display: grid;
 		padding: 0;
