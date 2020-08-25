@@ -7,17 +7,19 @@ const sliderSpan = document.querySelector('#wrapper nav .toggler span')
 const midSpan = document.querySelector('nav .toggler span:nth-child(2)')
 const firstSpan = document.querySelector('nav .toggler span:nth-child(1)')
 const thirdSpan = document.querySelector('nav .toggler span:nth-child(3)')
-const contacts = document.querySelector('#contact')
+const contacts = document.querySelector('#wrapper nav ul .contacts')
 
 contacts.addEventListener('click', (n) => {
-    contact.classList.toggle('open');
-    drive.classList.toggle('car');
-    console.log(contact)
+    contact.classList.add('open');
+    drive.classList.add('car');
+    setTimeout(() => {
+        contact.classList.remove('open');
+        drive.classList.remove('car');
+    }, 5000);
 })
 dropContact.addEventListener('click', (n) => {
     contact.classList.toggle('open');
     drive.classList.toggle('car');
-    console.log(contact)
 })
 
 slider.addEventListener('click', (n) => {
