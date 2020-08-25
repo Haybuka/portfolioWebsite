@@ -32,12 +32,3 @@ slider.addEventListener('click', (n) => {
 
 console.log('Hi there,your royal Geekiness.....Try Not to Break Anything!!!!!....Just Kidding')
 AOS.init();
-
-
-// window.addEventListener("load", function () {
-//     setTimeout(() => {
-//         const preloader = document.querySelector(".lds-heart");
-//         preloader.className += "loaded";
-//     }, 2000);
-
-// });
