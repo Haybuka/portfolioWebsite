@@ -106,6 +106,7 @@ main {
 	grid-column: 1/13;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	background-attachment: fixed;
 }
 
 main #left {
