@@ -4,6 +4,8 @@
 
 body {
     font-family: 'Mada', sans-serif;
+    text-align: center;
+
 }
 
 html {
@@ -12,104 +14,11 @@ html {
     scroll-behavior: smooth;
 }
 
-.preloader span {
-    display: block;
-    text-align: center;
-    width: 100vw;
-    font-size: 25%;
-}
-
-/* CSS start - For Live Project */
-.preloader {
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: #f12711;
-    background-color: #fff;
-    background-color: transparent;
-    font-family: Consolas, Menlo, Monaco, monospace;
+#demo {
+    font-size: 40px;
     font-weight: bold;
-    font-size: 30vh;
-    z-index: 1099;
 }
 
-.preloader span {
-    display: inline-block;
-    opacity: 0.8;
-    animation: pulse 0.4s alternate infinite ease-in-out;
-}
-
-.preloader span:nth-child(odd) {
-    animation-delay: 0.4s;
-    z-index: 1100;
-}
-
-@keyframes pulse {
-    to {
-        transform: scale(0.8);
-        opacity: 0.5;
-    }
-}
-
-.preloader.hidden {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-/* CSS end - For Live Project */
-/* ---- reset ---- */
-body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: -20;
-}
-
-/* ---- stats.js ---- */
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    -webkit-user-select: none;
-    margin-top: 0;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
+main {
+    margin-top: 10%;
 }
