@@ -21,6 +21,7 @@ html {
 	overflow: hidden;
 }
 
+
 #wrapper nav {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -79,13 +80,32 @@ html {
 #wrapper nav ul {
 	grid-column: 9/13;
 	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	list-style-type: none;
 }
 
-#wrapper nav li {
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 10px;
+#wrapper nav .hom {
+	grid-column: 1/2;
 }
+
+#wrapper nav .proj {
+	grid-column: 6/7;
+}
+
+#wrapper nav .abt {
+	grid-column: 8/9;
+}
+
+#wrapper nav .contacts {
+	grid-column: 10/11;
+}
+
+#wrapper nav ul a:hover {
+	color: #f12711;
+	text-decoration: none;
+}
+
 
 
 nav li a {
@@ -564,9 +584,29 @@ span {
 
 
 @media screen and (max-width: 660px) {
+
+	#wrapper nav .hom {
+		grid-column: 1/13;
+		grid-row: 1/2;
+	}
+
+	#wrapper nav .proj {
+		grid-column: 1/13;
+		grid-row: 2/3;
+	}
+
+	#wrapper nav .abt {
+		grid-column: 1/13;
+		grid-row: 3/4;
+	}
+
+	#wrapper nav .contacts {
+		grid-column: 1/13;
+		grid-row: 4/5;
+	}
+
 	#wrapper nav ul {
 		grid-column: 7/13;
-		margin-right: 5%;
 	}
 
 	section article#secondArt .btnDownload {
