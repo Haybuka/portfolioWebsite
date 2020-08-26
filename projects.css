@@ -3,9 +3,9 @@
 }
 
 body {
-    font-family: 'Mada', sans-serif;
-    text-align: center;
 
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 html {
@@ -21,4 +21,8 @@ html {
 
 main {
     margin-top: 10%;
+}
+
+i {
+    color: rgb(139, 69, 19);
 }
