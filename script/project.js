@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+var countDownDate = new Date("Aug 27, 2020 08:00:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -11,7 +11,7 @@ var x = setInterval(function () {
 
     // Time calculations for days, hours, minutes and seconds
 
-    var hours = Math.floor((distance % (1000 * 60 * 48)) / (1000 * 80));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
